@@ -1128,9 +1128,9 @@
             },
             "KE": {
                 "unidad_cobro": "$/L",
-                "precio": "1077.000",
-                "fecha_actualizacion": "2026-07-17",
-                "hora_actualizacion": "09:41:25",
+                "precio": "1079.000",
+                "fecha_actualizacion": "2026-07-23",
+                "hora_actualizacion": "09:47:11",
                 "tipo_atencion": "Asistido"
             },
             "95": {
@@ -1463,9 +1463,9 @@
             },
             "KE": {
                 "unidad_cobro": "$/L",
-                "precio": "1078.000",
-                "fecha_actualizacion": "2026-07-16",
-                "hora_actualizacion": "10:05:57",
+                "precio": "1080.000",
+                "fecha_actualizacion": "2026-07-23",
+                "hora_actualizacion": "10:20:46",
                 "tipo_atencion": "Asistido"
             },
             "95": {
@@ -1585,23 +1585,23 @@
         "precios": {
             "A93": {
                 "unidad_cobro": "$/L",
-                "precio": "1360.000",
-                "fecha_actualizacion": "2026-07-09",
-                "hora_actualizacion": "21:51:13",
+                "precio": "1350.000",
+                "fecha_actualizacion": "2026-07-20",
+                "hora_actualizacion": "11:20:42",
                 "tipo_atencion": "Autoservicio"
             },
             "A95": {
                 "unidad_cobro": "$/L",
-                "precio": "1400.000",
-                "fecha_actualizacion": "2026-07-08",
-                "hora_actualizacion": "14:59:00",
+                "precio": "1387.000",
+                "fecha_actualizacion": "2026-07-20",
+                "hora_actualizacion": "11:20:42",
                 "tipo_atencion": "Autoservicio"
             },
             "A97": {
                 "unidad_cobro": "$/L",
-                "precio": "1459.000",
-                "fecha_actualizacion": "2026-07-09",
-                "hora_actualizacion": "21:51:13",
+                "precio": "1446.000",
+                "fecha_actualizacion": "2026-07-20",
+                "hora_actualizacion": "11:20:42",
                 "tipo_atencion": "Autoservicio"
             },
             "ADI": {
@@ -1613,16 +1613,16 @@
             },
             "93": {
                 "unidad_cobro": "$/L",
-                "precio": "1375.000",
-                "fecha_actualizacion": "2026-07-09",
-                "hora_actualizacion": "21:51:13",
+                "precio": "1365.000",
+                "fecha_actualizacion": "2026-07-20",
+                "hora_actualizacion": "11:20:42",
                 "tipo_atencion": "Asistido"
             },
             "97": {
                 "unidad_cobro": "$/L",
-                "precio": "1474.000",
-                "fecha_actualizacion": "2026-07-09",
-                "hora_actualizacion": "21:51:13",
+                "precio": "1461.000",
+                "fecha_actualizacion": "2026-07-20",
+                "hora_actualizacion": "11:20:42",
                 "tipo_atencion": "Asistido"
             },
             "DI": {
@@ -1634,16 +1634,16 @@
             },
             "KE": {
                 "unidad_cobro": "$/L",
-                "precio": "1080.000",
-                "fecha_actualizacion": "2026-07-16",
-                "hora_actualizacion": "10:05:58",
+                "precio": "1082.000",
+                "fecha_actualizacion": "2026-07-23",
+                "hora_actualizacion": "10:20:47",
                 "tipo_atencion": "Asistido"
             },
             "95": {
                 "unidad_cobro": "$/L",
-                "precio": "1415.000",
-                "fecha_actualizacion": "2026-07-08",
-                "hora_actualizacion": "14:59:00",
+                "precio": "1402.000",
+                "fecha_actualizacion": "2026-07-20",
+                "hora_actualizacion": "11:20:42",
                 "tipo_atencion": "Asistido"
             }
         }

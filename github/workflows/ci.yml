@@ -10,6 +10,22 @@ jobs:
   validate:
     runs-on: ubuntu-latest
 
+    build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+      - run: npm install
+      - run: npm run lint --if-present
+      - name: Verificar Tipos (Typecheck)
+        run: npm run typecheck
+
+      - name: Ejecutar Pruebas (Test)
+        run: npm run test
+
     steps:
       - name: Checkout código
         uses: actions/checkout@v4

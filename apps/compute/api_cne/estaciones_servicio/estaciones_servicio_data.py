@@ -24,6 +24,8 @@ def main_api_cne_token():
 
     return token[10:len(token) - 2]
 
+print(main_api_cne_token())
+
 def main_est_servicio_data():
     conn = http.client.HTTPSConnection("api.cne.cl")
     payload = ''
