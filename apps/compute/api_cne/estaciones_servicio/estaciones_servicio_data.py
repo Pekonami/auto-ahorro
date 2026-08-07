@@ -2,6 +2,7 @@ import dotenv
 import http.client
 import gzip
 import json, os
+from dotenv import set_key
 
 def main_api_cne_token():
     config = dotenv.dotenv_values(".env")
@@ -24,13 +25,12 @@ def main_api_cne_token():
 
     return token[10:len(token) - 2]
 
-print(main_api_cne_token())
-
 def main_est_servicio_data():
     conn = http.client.HTTPSConnection("api.cne.cl")
     payload = ''
 
     API_CNE = main_api_cne_token()
+    set_key(".env", "API_CNE", API_CNE)
 
     headers = {
     'Authorization': f'Bearer {API_CNE}'
@@ -45,22 +45,10 @@ def main_est_servicio_data():
     json_data = json.loads(result)
 
     datos_filtrados = []
-    test = []
     for linea in json_data:
-        if linea["ubicacion"]["nombre_region"] == "Metropolitana de Santiago" and\
-            linea["ubicacion"]["nombre_comuna"] == "Providencia":
-            datos_filtrados.append(linea)
-            try:
-                if linea["precios"]["93"]["precio"]:
-                    test.append(linea["precios"]["93"]["precio"])
-            except:
-                pass
-
+        datos_filtrados.append(linea)
     with open("api_cne/estaciones_servicio/estaciones_servicio_data.json", "w", encoding="utf-8") as file:
         json.dump(datos_filtrados, file, indent=4, ensure_ascii=False)
-    
-    with open("api_cne/estaciones_servicio/test.json", "w", encoding="utf-8") as file:
-        json.dump(test, file, indent=4, ensure_ascii=False)
 
 main_est_servicio_data()
 #con esto cargamos toda la data de las estaciones en estaciones_servicio_data.json
